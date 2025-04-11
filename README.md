@@ -4,7 +4,9 @@
 
 Os participantes devem clonar esse repositório, criar uma branch com o seu nome e trabalhar nessa branch.
 
-Cada participante deve criar um diretório (pasta) com o seu nome e incluir seus arquivos dentro desse diretório.
+Cada participante deve criar um diretório (pasta) com o seu nome e um identificador (para caso de nomes iguais) e incluir seus arquivos dentro desse diretório.
+
+Exemplo: "igor-000".
 
 Nomei a raíz do seu HTML com o seu nome, ex: "igor.html".
 
