@@ -14,11 +14,13 @@ Nomei a raíz do seu HTML com o seu nome, ex: "igor.html".
 
 Não utilize caracteres especiais nem acentos ou espaço em branco nos nomes de arquivos e pastas.
 
-Caso tenham dúvida, deem uma olhada na branch "igor" que eu criei.
+Caso tenham dúvida, deem uma olhada na branch "igor-00" que eu criei.
 
 Qualquer dúvida, me manda uma mensagem pelo LinkedIn.
 
 Não utilizem bibliotecas como React direto na sua pasta de diretório. Caso queira, utilize em uma pasta separada e execute um build e coloque apenas os arquivos HTML, CSS e JS. Isso evitará complicações e facilitará no caso de fazer um deploy do projeto.
+
+Evite utilizar arquivos de imagens. Deem preferencia para arquivos de imagens hospedados e utilize o endereço desse arquivo.
 
 # Objetivo
 
