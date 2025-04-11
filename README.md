@@ -10,6 +10,8 @@ Cada participante deve criar um diretório (pasta) com o seu nome e um identific
 
 Exemplo: "igor-000".
 
+_IMPORTANTE_: Não mexa nos arquivos da branch "main".
+
 Nomei a raíz do seu HTML com o seu nome, ex: "igor.html".
 
 Não utilize caracteres especiais nem acentos ou espaço em branco nos nomes de arquivos e pastas.
