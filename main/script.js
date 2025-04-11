@@ -1,7 +1,7 @@
-const colaboradoresUl = document.querySelector(".colaboradores");
+const colaboratorsUl = document.querySelector(".colaboradores");
 const inputEl = document.getElementById("input-pesquisa");
 
-const colaboradoresInfo = [
+const colaboratorsInfo = [
   {
     name: "Igor",
     isMale: true,
@@ -48,7 +48,7 @@ const makeAListOfColaborators = ({
   pictureDescription,
   hasBackButton,
 }) => {
-  colaboradoresUl.innerHTML += `
+  colaboratorsUl.innerHTML += `
     <li class="colaborador">
     <img class='img-perfil' src="${picture}" alt="${pictureDescription}" />
           
@@ -65,13 +65,13 @@ const makeAListOfColaborators = ({
   `;
 };
 
-colaboradoresInfo.forEach(makeAListOfColaborators);
+colaboratorsInfo.forEach(makeAListOfColaborators);
 
 inputEl.addEventListener("keyup", () => {
-  colaboradoresUl.innerHTML = "";
+  colaboratorsUl.innerHTML = "";
   const inputValue = inputEl.value.toLowerCase();
-  const colaboradoresInfoFiltered = colaboradoresInfo.filter(({ name }) =>
+  const colaboratorsInfoFiltered = colaboratorsInfo.filter(({ name }) =>
     name.toLowerCase().includes(inputValue)
   );
-  colaboradoresInfoFiltered.forEach(makeAListOfColaborators);
+  colaboratorsInfoFiltered.forEach(makeAListOfColaborators);
 });
