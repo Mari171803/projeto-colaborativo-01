@@ -52,10 +52,13 @@ h1 {
 }
 
 header p {
-  font-size: 1.25rem;
-  box-shadow: 0 0 4px var(--color-1-laranja);
-  border-radius: 8px;
+  font-size: 1.5rem;
+  /* box-shadow: 0 0 4px var(--color-1-laranja); */
+  /* border-radius: 8px; */
+  border-top: 2px solid var(--color-1-laranja);
+  border-bottom: 2px solid var(--color-1-laranja);
   padding: 0.8rem;
+  text-shadow: 1px 0 0 var(--color-1-laranja);
 }
 
 #descricao {
@@ -71,8 +74,12 @@ header p {
 }
 
 #descricao-conteudo p {
-  margin: 2rem 0;
-  font-size: 1.25rem;
+  text-align: justify;
+  hyphens: auto;
+  text-indent: 2rem;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  font-size: 1.2rem;
   line-height: 1.2;
   color: var(--color-3-dark);
 }
@@ -103,11 +110,20 @@ header p {
   text-shadow: 3px 2px 1px var(--color-3-dark);
 }
 
+#input-pesquisa-container {
+  position: relative;
+  width: 60%;
+  margin: 2rem auto 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #input-pesquisa {
   display: block;
-  margin: 2rem auto 3rem;
-  width: 30rem;
-  padding: 0.5rem 1rem;
+  width: 100%;
+  height: 2.2rem;
+  padding: 0 1rem;
   border-radius: 1rem;
   border: none;
   font-size: 1rem;
@@ -115,6 +131,14 @@ header p {
 
 #input-pesquisa:focus {
   outline: 1.2px solid var(--color-6-azul-escuro);
+}
+
+#input-pesquisa-icone {
+  position: absolute;
+  right: 0.2rem;
+  width: 3rem;
+  height: 1.75rem;
+  cursor: pointer;
 }
 
 .colaboradores {
@@ -135,9 +159,9 @@ header p {
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  padding: 1rem;
+  padding: 1.05rem;
   border-radius: 8px;
-  box-shadow: 0 0 4px var(--color-6-azul-escuro);
+  box-shadow: 0 0 4px var(--color-5-azul-claro);
 }
 
 .colaborador:hover {
@@ -149,6 +173,12 @@ header p {
   border-radius: 8px;
   object-fit: cover;
   object-position: center;
+}
+
+footer {
+  background-color: #fff;
+  text-align: center;
+  padding: 1rem;
 }
 
 @media (max-width: 1100px) {
