@@ -1,4 +1,5 @@
-const colaboradores = document.querySelector(".colaboradores");
+const colaboradoresUl = document.querySelector(".colaboradores");
+const inputEl = document.getElementById("input-pesquisa");
 
 const colaboradoresInfo = [
   {
@@ -11,7 +12,7 @@ const colaboradoresInfo = [
     pictureDescription: "foto de Igor.",
   },
   {
-    name: "Igor",
+    name: "Carlos",
     isMale: false,
     hasBackButton: false,
     path: "/igor/igor.html",
@@ -20,7 +21,7 @@ const colaboradoresInfo = [
     pictureDescription: "foto de Igor.",
   },
   {
-    name: "Igor",
+    name: "Rafael",
     isMale: true,
     hasBackButton: true,
     path: "/igor/igor.html",
@@ -29,7 +30,7 @@ const colaboradoresInfo = [
     pictureDescription: "foto de Igor.",
   },
   {
-    name: "Igor",
+    name: "Maria",
     isMale: false,
     hasBackButton: false,
     path: "/igor/igor.html",
@@ -39,9 +40,15 @@ const colaboradoresInfo = [
   },
 ];
 
-colaboradoresInfo.forEach(
-  ({ name, isMale, path, picture, pictureDescription, hasBackButton }) => {
-    colaboradores.innerHTML += `
+const makeAListOfColaborators = ({
+  name,
+  isMale,
+  path,
+  picture,
+  pictureDescription,
+  hasBackButton,
+}) => {
+  colaboradoresUl.innerHTML += `
     <li class="colaborador">
     <img class='img-perfil' src="${picture}" alt="${pictureDescription}" />
           
@@ -50,11 +57,21 @@ colaboradoresInfo.forEach(
               <h3>${isMale ? "Colaborador" : "Colaboradora"}</h3>
               <div>${name}</div>
               <a href="${path}" target="${
-      hasBackButton ? "_self" : "_blank"
-    }">Página pessoal</a>
+    hasBackButton ? "_self" : "_blank"
+  }">Página pessoal</a>
             </div>
           
         </li>
   `;
-  }
-);
+};
+
+colaboradoresInfo.forEach(makeAListOfColaborators);
+
+inputEl.addEventListener("keyup", () => {
+  colaboradoresUl.innerHTML = "";
+  const inputValue = inputEl.value.toLowerCase();
+  const colaboradoresInfoFiltered = colaboradoresInfo.filter(({ name }) =>
+    name.toLowerCase().includes(inputValue)
+  );
+  colaboradoresInfoFiltered.forEach(makeAListOfColaborators);
+});
