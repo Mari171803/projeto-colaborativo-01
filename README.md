@@ -10,7 +10,7 @@ Cada participante deve criar um diretório (pasta) com o seu nome e um identific
 
 Exemplo: "igor-000".
 
-_IMPORTANTE_: Não mexa nos arquivos da branc "main".
+_IMPORTANTE_: Não mexa nos arquivos da branch "main".
 
 Nomei a raíz do seu HTML com o seu nome, ex: "igor.html".
 
