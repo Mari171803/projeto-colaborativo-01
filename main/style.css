@@ -1,4 +1,17 @@
+:root {
+  --color-1-azul: "#087E8B";
+  --color-2-vermelho: "#FF5A5F";
+  --color-3-dark: "#3C3C3C";
+  --color-4-light: "#F5F5F5";
+  --color-5-azul-claro: "#AEC5EB";
+}
+
 body {
-  background-color: brown;
+  background-color: var(--color-4-light);
   font-family: sans-serif;
+}
+
+img {
+  width: 100px;
+  border-radius: 50%;
 }
