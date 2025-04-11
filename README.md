@@ -2,7 +2,9 @@
 
 # Instruções
 
-Os participantes devem clonar esse repositório, criar uma branch com o seu nome e trabalhar nessa branch.
+Os participantes devem clonar esse repositório, criar uma branch com o seu nome e um identificador (para caso de nomes iguais) e trabalhar nessa branch.
+
+Exemplo: "igor-000".
 
 Cada participante deve criar um diretório (pasta) com o seu nome e um identificador (para caso de nomes iguais) e incluir seus arquivos dentro desse diretório.
 
