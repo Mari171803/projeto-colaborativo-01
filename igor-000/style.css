@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: black;
+  color: aliceblue;
+}
+
+header {
+  height: 5rem;
+  background-color: rgb(29, 218, 218);
+  margin-bottom: 4rem;
+  display: flex;
+  align-items: center;
+  padding: 0 3rem;
+}
+
+header a {
+  background-color: black;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: all 0.2s ease-in;
+}
+
+header a:hover {
+  background-color: rgb(14, 81, 239);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+
+section {
+  width: 25rem;
+}
+
+#apresentacao {
+  text-align: center;
+}
+
+#main-img {
+  border-radius: 50%;
+  box-shadow: 0 0 4px white;
+  margin-bottom: 1.5rem;
+  background-color: rgb(29, 218, 218);
+}
+
+#redes {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.rede img {
+  width: 2.5rem;
+  box-shadow: 0 0 4px white;
+  border-radius: 50%;
+}
+
+.rede:hover img {
+  box-shadow: 0 0 8px white;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+p {
+  margin: 1rem 0;
+}
