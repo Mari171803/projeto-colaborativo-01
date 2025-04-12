@@ -1,0 +1,67 @@
+/* :root {
+  --color-1-laranja: #ff9f1c;
+  --color-2-vermelho: #d80032;
+  --color-3-dark: #3c3c3c;
+  --color-4-light: #f5f5f5;
+  --color-5-azul-claro: #aec5eb;
+  --color-6-azul-escuro: #3b60e4;
+} */
+
+.colaborador {
+  width: 18rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.05rem;
+  border-radius: 8px;
+  box-shadow: 0 0 4px var(--color-5-azul-claro);
+}
+
+.colaborador:hover {
+  box-shadow: 0 0 6px var(--color-6-azul-escuro);
+}
+
+.img-perfil {
+  width: 5rem;
+  height: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.colaborador-info {
+  padding: 0.75rem 0;
+}
+
+.colaborador-title {
+  font-size: 0.95rem;
+}
+
+.colaborador-name,
+.colaborador-area {
+  margin: 0.3rem;
+  font-size: 0.95rem;
+  color: #353535;
+}
+
+.colaborador-btn {
+  display: inline-block;
+  background-color: var(--color-6-azul-escuro);
+  padding: 0.25rem 0.75rem;
+  text-decoration: none;
+  color: var(--color-4-light);
+  border-radius: 8px;
+  font-size: 0.85rem;
+  transition: background-color 0.2s ease-in;
+}
+
+.colaborador-btn:hover {
+  background-color: #243b8be4;
+}
+
+.not-found {
+  text-align: center;
+  list-style: none;
+  font-size: 2rem;
+  color: var(--color-2-vermelho);
+}
