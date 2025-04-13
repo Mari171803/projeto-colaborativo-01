@@ -1,7 +1,7 @@
-const colaboratorsUl = document.querySelector(".colaboradores");
+const collaboratorsUl = document.querySelector(".colaboradores");
 const inputEl = document.getElementById("input-pesquisa");
 
-const colaboratorsInfo = [
+const collaboratorsInfo = [
   {
     name: "Igor Gazineo",
     isMale: true,
@@ -29,7 +29,7 @@ const makeAListOfColaborators = ({
   picture,
   devSpecialization,
 }) => {
-  colaboratorsUl.innerHTML += `
+  collaboratorsUl.innerHTML += `
     <li class="colaborador">
     <img class='img-perfil' src="${picture}" alt="Foto de ${name}" />
           
@@ -51,18 +51,18 @@ const makeAListOfColaborators = ({
   `;
 };
 
-colaboratorsInfo.forEach(makeAListOfColaborators);
+collaboratorsInfo.forEach(makeAListOfColaborators);
 
 inputEl.addEventListener("keyup", () => {
-  colaboratorsUl.innerHTML = "";
+  collaboratorsUl.innerHTML = "";
   const inputValue = inputEl.value.toLowerCase();
-  const colaboratorsInfoFiltered = colaboratorsInfo.filter(({ name }) =>
+  const collaboratorsInfoFiltered = collaboratorsInfo.filter(({ name }) =>
     name.toLowerCase().includes(inputValue)
   );
-  colaboratorsInfoFiltered.forEach(makeAListOfColaborators);
+  collaboratorsInfoFiltered.forEach(makeAListOfColaborators);
 
-  if (!colaboratorsInfoFiltered.length) {
-    colaboratorsUl.innerHTML =
+  if (!collaboratorsInfoFiltered.length) {
+    collaboratorsUl.innerHTML =
       "<li class='not-found'>Colaborador(a) não encontrado(a).</li>";
   }
 });

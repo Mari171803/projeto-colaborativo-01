@@ -23,6 +23,8 @@ p {
   --color-8: #05204a;
   --color-9: #1d263b;
   --color-10: #223843;
+  --color-white: #ffffff;
+  --color-black: #000000;
 
   scroll-behavior: smooth;
 }
