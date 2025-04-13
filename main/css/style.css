@@ -34,43 +34,6 @@ body {
   font-family: "Inria Sans", sans-serif;
 }
 
-#descricao {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  /* margin: 2rem 0; */
-}
-
-#descricao-conteudo {
-  /* padding: 2rem; */
-  width: 33rem;
-}
-
-#descricao-conteudo p {
-  text-align: justify;
-  hyphens: auto;
-  text-indent: 2rem;
-  margin-top: 2rem;
-  margin-right: 2rem;
-  font-size: 1.2rem;
-  line-height: 1.2;
-  color: var(--color-3-dark);
-}
-
-#descricao-img-div {
-  width: 60%;
-  display: flex;
-  justify-content: center;
-}
-
-#descricao-img {
-  width: 30rem;
-  height: 20rem;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 8px;
-}
-
 #apresentacao {
   background-color: var(--color-5-azul-claro);
   border-radius: 8px;

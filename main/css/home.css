@@ -22,14 +22,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 4rem;
+  /* margin-bottom: 4rem; */
 }
 
 #home-conteudo {
   text-align: center;
 }
 
-h1 {
+#home-titulo {
+  width: fit-content;
   font-size: 6rem;
   font-family: sans-serif;
   font-weight: bold;
@@ -38,7 +39,7 @@ h1 {
   color: transparent;
   border-bottom: 0.313rem solid rgba(255, 255, 255, 0.6);
   text-shadow: 0 0 1rem var(--color-white);
-  margin-bottom: 1rem;
+  margin: 0 auto 1rem;
 }
 
 #home-slogan {
@@ -56,3 +57,13 @@ h1 {
   border: 1.5px solid #44cfcb;
   box-shadow: 0 0 4px white;
 } */
+
+@media (max-width: 690px) {
+  #home-titulo {
+    font-size: 4rem;
+  }
+
+  #home-slogan {
+    font-size: 1.5rem;
+  }
+}
