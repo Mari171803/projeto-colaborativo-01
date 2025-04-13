@@ -19,6 +19,14 @@ const collaboratorsInfo = [
     picture: "https://avatars.githubusercontent.com/u/185527961?v=4",
     devSpecialization: "frontend",
   },
+  {
+    name: "Rodrigo Marques Tavares",
+    isMale: true,
+    hasBackButton: false,
+    path: "../rodrigo-274/rodrigo.html",
+    picture: "https://avatars.githubusercontent.com/u/157378101?v=4",
+    devSpecialization: "frontend",
+  },
 ];
 
 const makeAListOfColaborators = ({

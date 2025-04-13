@@ -10,18 +10,19 @@
 }
 
 #logo-header {
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-family: sans-serif;
   font-weight: bold;
-  -webkit-text-stroke: 0.094rem var(--color-7);
+  -webkit-text-stroke: 0.047rem var(--color-7);
   cursor: default;
   color: transparent;
-  border-bottom: 0.156rem solid rgba(255, 255, 255, 0.6);
-  text-shadow: 0 0 0.5rem var(--color-white);
+  border-bottom: 0.078rem solid rgba(255, 255, 255, 0.6);
+  text-shadow: 0 0 0.25rem var(--color-white);
 }
 
 #links-header {
   display: flex;
+  align-items: center;
   list-style: none;
   gap: 2rem;
   font-size: 1.25rem;
@@ -29,6 +30,9 @@
 }
 
 #links-header li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 0.25rem 0.75rem;
   border-radius: 8px;
   box-shadow: 0 0 4px var(--color-white);
@@ -43,6 +47,7 @@
 }
 
 #links-header a {
+  font-size: 1rem;
   color: var(--color-white);
   text-decoration: none;
 }
@@ -95,9 +100,7 @@
   :root {
     font-size: 12px;
   }
-  #logo-header {
-    font-size: 2rem;
-  }
+
   #links-header {
     position: fixed;
     top: 0;
@@ -113,7 +116,13 @@
   }
 
   #links-header.expand {
-    width: 80%;
+    width: 90%;
+  }
+
+  #links-header a {
+    font-size: 2rem;
+    color: var(--color-white);
+    text-decoration: none;
   }
 
   #menu-hamburger {
