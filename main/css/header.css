@@ -1,0 +1,62 @@
+:root {
+  --color-1: #6ea3c3;
+  --color-2: #82b2c7;
+  --color-3: #cfa577;
+  --color-4: #9fb8b2;
+  --color-5: #beb7a2;
+  --color-6: #001b2e;
+  --color-7: #294c60;
+  --color-8: #05204a;
+  --color-9: #1d263b;
+  --color-10: #223843;
+  --color-white: #ffffff;
+  --color-black: #000000;
+}
+
+#main-header {
+  position: absolute;
+  height: 6rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 0 3rem;
+}
+
+#logo-header {
+  font-size: 3rem;
+  font-family: sans-serif;
+  font-weight: bold;
+  -webkit-text-stroke: 0.094rem var(--color-7);
+  cursor: default;
+  color: transparent;
+  border-bottom: 0.156rem solid rgba(255, 255, 255, 0.6);
+  text-shadow: 0 0 0.5rem var(--color-white);
+}
+
+#links-header {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  font-size: 1.25rem;
+}
+
+#links-header li {
+  padding: 0.25rem 0.75rem;
+  border-radius: 8px;
+  box-shadow: 0 0 4px var(--color-white);
+  background-color: var(--color-1);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#links-header li:hover {
+  background-color: var(--color-2);
+  box-shadow: 0 0 8px var(--color-white);
+}
+
+#links-header a {
+  color: var(--color-white);
+  text-decoration: none;
+}
