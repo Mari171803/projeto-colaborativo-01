@@ -6,45 +6,69 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@700&family=Inter:opsz@14..32&display=swap"
       rel="stylesheet"
     />
-    <title>DevStart</title>
+    <title>&lt;DevStart /&gt;</title>
     <link rel="stylesheet" href="main/css/style.css" />
+    <link rel="stylesheet" href="main/css/header.css" />
+    <link rel="stylesheet" href="main/css/home.css" />
+    <link rel="stylesheet" href="main/css/descricao.css" />
     <link rel="stylesheet" href="main/css/colaborador.css" />
     <link rel="stylesheet" href="main/css/responsividade.css" />
     <script src="main/script.js" defer></script>
+    <script src="main/header.js" defer></script>
   </head>
   <body>
-    <header>
-      <h1>DevStart</h1>
-      <p>"Quem nunca teve chance, agora tem equipe."</p>
+    <header id="main-header">
+      <div id="logo-header">&lt;DevStart /&gt;</div>
+      <ul id="links-header">
+        <li class="link-header"><a href="#main-header">Home</a></li>
+        <li class="link-header"><a href="#descricao">Sobre</a></li>
+        <li class="link-header"><a href="#apresentacao">Colaboradores</a></li>
+      </ul>
+      <ul id="menu-hamburger">
+        <li class="bar bar1"></li>
+        <li class="bar bar2"></li>
+        <li class="bar bar3"></li>
+      </ul>
     </header>
 
     <main>
-      <section id="descricao">
-        <div id="descricao-conteudo">
-          <p id="descricaio-paragrafo-1">
-            DevStart é uma iniciativa colaborativa criada por desenvolvedores em
-            início de carreira que estão em busca da sua primeira oportunidade
-            no mercado de trabalho. Aqui, cada participante constrói sua própria
-            página de apresentação, exercita suas habilidades técnicas, aprende
-            a colaborar em equipe e ganha experiência prática em um ambiente
-            real de desenvolvimento.
-          </p>
-          <p id="descricaio-paragrafo-2">
-            Nosso objetivo é crescer juntos, construir um portfólio sólido e
-            mostrar que, mesmo sem experiência formal, temos muito a oferecer.
-            Este projeto é 100% gratuito e feito com muita dedicação e
-            aprendizado coletivo.
-          </p>
+      <section id="home">
+        <div id="home-conteudo">
+          <h1 id="home-titulo">&lt;DevStart /&gt;</h1>
+          <p id="home-slogan">"Quem nunca teve chance, agora tem equipe."</p>
         </div>
-        <div id="descricao-img-div">
-          <img
-            src="https://images.pexels.com/photos/3182796/pexels-photo-3182796.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
-            alt=""
-            id="descricao-img"
-          />
+      </section>
+
+      <section id="descricao">
+        <h2 id="descricao-titulo">Sobre</h2>
+        <div id="descricao-conteudo-img">
+          <div id="descricao-conteudo">
+            <p id="descricaio-paragrafo-1">
+              <span id="logo-descrocao">DevStart</span> é uma iniciativa
+              colaborativa criada por desenvolvedores em início de carreira que
+              estão em busca da sua primeira oportunidade no mercado de
+              trabalho. Aqui, cada participante constrói sua própria página de
+              apresentação, exercita suas habilidades técnicas, aprende a
+              colaborar em equipe e ganha experiência prática em um ambiente
+              real de desenvolvimento.
+            </p>
+            <p id="descricaio-paragrafo-2">
+              Nosso objetivo é crescer juntos, construir um portfólio sólido e
+              mostrar que, mesmo sem experiência formal, temos muito a oferecer.
+              Este projeto é 100% gratuito e feito com muita dedicação e
+              aprendizado coletivo.
+            </p>
+          </div>
+          <div id="descricao-img-div">
+            <img
+              src="https://images.pexels.com/photos/3182796/pexels-photo-3182796.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+              alt=""
+              id="descricao-img"
+            />
+          </div>
         </div>
       </section>
 

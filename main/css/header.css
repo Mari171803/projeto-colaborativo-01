@@ -1,0 +1,131 @@
+#main-header {
+  position: absolute;
+  height: 6rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 0 3rem;
+}
+
+#logo-header {
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  font-weight: bold;
+  -webkit-text-stroke: 0.047rem var(--color-7);
+  cursor: default;
+  color: transparent;
+  border-bottom: 0.078rem solid rgba(255, 255, 255, 0.6);
+  text-shadow: 0 0 0.25rem var(--color-white);
+}
+
+#links-header {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
+  font-size: 1.25rem;
+  z-index: 1;
+}
+
+#links-header li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 8px;
+  box-shadow: 0 0 4px var(--color-white);
+  background-color: var(--color-1);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#links-header li:hover {
+  background-color: var(--color-2);
+  box-shadow: 0 0 8px var(--color-white);
+}
+
+#links-header a {
+  font-size: 1rem;
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+#menu-hamburger {
+  position: fixed;
+  right: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  list-style: none;
+  width: 45px;
+  background-color: transparent;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: none;
+  z-index: 1;
+}
+
+.bar {
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-7);
+  border-radius: 18px;
+  transition: all 0.3s ease;
+}
+
+#menu-hamburger.close .bar1 {
+  transform: translateY(10px) rotate(45deg);
+}
+
+#menu-hamburger.close .bar2 {
+  opacity: 0;
+}
+
+#menu-hamburger.close .bar3 {
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+@media (max-width: 840px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 730px) {
+  :root {
+    font-size: 12px;
+  }
+
+  #links-header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    background-color: var(--color-5);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+  }
+
+  #links-header.expand {
+    width: 90%;
+  }
+
+  #links-header a {
+    font-size: 2rem;
+    color: var(--color-white);
+    text-decoration: none;
+  }
+
+  #menu-hamburger {
+    display: flex;
+  }
+}
