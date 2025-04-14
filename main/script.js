@@ -32,7 +32,8 @@ const collaboratorsInfo = [
     isMale: true,
     hasBackButton: false,
     path: "../victor-22/victor.html",
-    picture: "https://avatars.githubusercontent.com/u/157378101?v=4",
+    picture:
+      "https://media.licdn.com/dms/image/v2/D4D03AQF1LhFxdd4qcQ/profile-displayphoto-shrink_800_800/B4DZYiSs7MGwAg-/0/1744332050695?e=1750291200&v=beta&t=79llcLSEuUCBMTzH5AzPVthNT2O4cbRoqWiWHa4MR0A",
     devSpecialization: "frontend",
   },
 ];
