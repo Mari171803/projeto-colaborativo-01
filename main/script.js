@@ -27,6 +27,14 @@ const collaboratorsInfo = [
     picture: "https://avatars.githubusercontent.com/u/157378101?v=4",
     devSpecialization: "frontend",
   },
+  {
+    name: "Victor Ponce Ferandes",
+    isMale: true,
+    hasBackButton: false,
+    path: "../victor-22/victor.html",
+    picture: "https://avatars.githubusercontent.com/u/157378101?v=4",
+    devSpecialization: "frontend",
+  },
 ];
 
 const makeAListOfColaborators = ({
