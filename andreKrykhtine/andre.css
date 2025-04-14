@@ -34,6 +34,25 @@ body{
     border-radius: 10px;
     margin : 2rem;  
     padding: 2rem;
+    position: relative;
+}
+.bntBack{
+    background-color: #22398b;
+    color: #fff;
+    padding: 0.5rem 2rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    position: absolute;
+    top: 0.6rem;
+    left: 2rem;
+}
+
+.bntBack:hover{
+    background-color: #fff;
+    color: #22398b;
 }
 
 .title{ 
