@@ -36,6 +36,15 @@ const collaboratorsInfo = [
       "https://media.licdn.com/dms/image/v2/D4D03AQF1LhFxdd4qcQ/profile-displayphoto-shrink_800_800/B4DZYiSs7MGwAg-/0/1744332050695?e=1750291200&v=beta&t=79llcLSEuUCBMTzH5AzPVthNT2O4cbRoqWiWHa4MR0A",
     devSpecialization: "frontend",
   },
+  {
+    name: "Felipe Melo Gomes",
+    isMale: true,
+    hasBackButton: false,
+    path: "https://portfoliofmg.netlify.app/",
+    picture:
+      "https://avatars.githubusercontent.com/u/85581543?s=400&u=a2231acbdce15a9430e760d715910d7411067bc4&v=4",
+    devSpecialization: "Full-Stack",
+  },
 ];
 
 const makeAListOfColaborators = ({
@@ -74,7 +83,7 @@ inputEl.addEventListener("keyup", () => {
   collaboratorsUl.innerHTML = "";
   const inputValue = inputEl.value.toLowerCase();
   const collaboratorsInfoFiltered = collaboratorsInfo.filter(({ name }) =>
-    name.toLowerCase().includes(inputValue)
+    name.toLowerCase().includes(inputValue),
   );
   collaboratorsInfoFiltered.forEach(makeAListOfColaborators);
 
