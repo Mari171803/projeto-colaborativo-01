@@ -14,7 +14,7 @@ const collaboratorsInfo = [
   {
     name: "Andre Krykhtine",
     isMale: true,
-    hasBackButton: false,
+    hasBackButton: true,
     path: "../andreKrykhtine/andre.html",
     picture: "https://avatars.githubusercontent.com/u/185527961?v=4",
     devSpecialization: "frontend",
@@ -83,7 +83,7 @@ inputEl.addEventListener("keyup", () => {
   collaboratorsUl.innerHTML = "";
   const inputValue = inputEl.value.toLowerCase();
   const collaboratorsInfoFiltered = collaboratorsInfo.filter(({ name }) =>
-    name.toLowerCase().includes(inputValue),
+    name.toLowerCase().includes(inputValue)
   );
   collaboratorsInfoFiltered.forEach(makeAListOfColaborators);
 
