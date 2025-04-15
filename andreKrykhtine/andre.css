@@ -104,3 +104,9 @@ body{
 .contacts a:hover{
     color: #ff9f1c;
 }
+
+@media screen and (max-width: 768px) {
+    .container{ 
+    padding-top: 4rem;
+    }
+}
