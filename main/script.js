@@ -43,7 +43,16 @@ const collaboratorsInfo = [
     path: "https://portfoliofmg.netlify.app/",
     picture:
       "https://avatars.githubusercontent.com/u/85581543?s=400&u=a2231acbdce15a9430e760d715910d7411067bc4&v=4",
-    devSpecialization: "Full-Stack",
+    devSpecialization: "full stack",
+  },
+  {
+    name: "Diogenes Leonardo",
+    isMale: true,
+    hasBackButton: true,
+    path: "../diogenes-09/diogenes.html",
+    picture:
+      "https://media.licdn.com/dms/image/v2/D4D03AQF_gfhiWGoBrQ/profile-displayphoto-shrink_800_800/B4DZQGFUIjGkAg-/0/1735268845149?e=1750291200&v=beta&t=Ih11IQ8FVnKR8dn2ED3kNNbypMnsp29sR_Z3s9rl3ic",
+    devSpecialization: "full stack",
   },
 ];
 
