@@ -54,6 +54,15 @@ const collaboratorsInfo = [
       "https://media.licdn.com/dms/image/v2/D4D03AQF_gfhiWGoBrQ/profile-displayphoto-shrink_800_800/B4DZQGFUIjGkAg-/0/1735268845149?e=1750291200&v=beta&t=Ih11IQ8FVnKR8dn2ED3kNNbypMnsp29sR_Z3s9rl3ic",
     devSpecialization: "full stack",
   },
+  {
+    name: "Rafael Thomaz",
+    isMale: true,
+    hasBackButton: true,
+    path: "../Rafael_Thomaz-001/rafael.html",
+    picture:
+      "https://avatars.githubusercontent.com/u/114960583?s=400&u=02a7cd678769fa7d4b078971439761aced4658d0&v=4",
+    devSpecialization: "Front-End",
+  },
 ];
 
 const makeAListOfColaborators = ({
@@ -70,16 +79,13 @@ const makeAListOfColaborators = ({
           
             <div class='colaborador-info'>
               
-              <h3 class='colaborador-title'>${
-                isMale ? "Colaborador" : "Colaboradora"
-              }</h3>
+              <h3 class='colaborador-title'>${isMale ? "Colaborador" : "Colaboradora"
+    }</h3>
               <div class='colaborador-name'>${name}</div>
-              <div class='colaborador-area'><b>Área:</b> ${
-                devSpecialization ? devSpecialization : "Não informada"
-              }</div>
-              <a href="${path}" class='colaborador-btn' target="${
-    hasBackButton ? "_self" : "_blank"
-  }">Página pessoal</a>
+              <div class='colaborador-area'><b>Área:</b> ${devSpecialization ? devSpecialization : "Não informada"
+    }</div>
+              <a href="${path}" class='colaborador-btn' target="${hasBackButton ? "_self" : "_blank"
+    }">Página pessoal</a>
             </div>
           
         </li>
