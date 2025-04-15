@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: rgb(11, 68, 148);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.detalhes {
+    margin: 3%;
+    background-color: rgb(12, 51, 107);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    padding: 5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & p {
+        font-size: 20px;
+        margin: 10px 0;
+        text-align: center;
+        line-height: 1.5;
+        padding: 0 20rem;
+    }
+}
+
+.imagem-perfil {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+
+
+.projetos {
+    margin: 3%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    background-color: rgb(12, 51, 107);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+    & .dripstore {
+        text-align: center;
+        margin: 2rem;
+    }
+
+    & .leitura-de-nutrientes {
+        text-align: center;
+        margin: 2rem;
+    }
+
+    & p {
+        font-size: 20px;
+        padding: 0 20rem;
+    }
+}
