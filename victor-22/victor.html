@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Landing page pessoal de [Victor Fernandes ]">
+    <title>Victor Fernandes - Bem-vindo(a)!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="logo"> Victor Fernandes </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#about">Sobre Mim</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Abrir Menu">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container hero-content">
+                <h1>  Victor Gabriel Ponce Fernandes !</h1>
+                <p class="subtitle">Progrmador Front-End, discente em Tencnólogo em Jogos Digitais e Suporte de TI </p>
+                <p>Bem-vindo(a) à minha página pessoal. Aqui você encontrará mais sobre mim, minhas paixões e projetos.</p>
+                <a href="#about" class="cta-button primary">Saiba Mais Sobre Mim</a>
+                <a href="#contact" class="cta-button secondary">Entre em Contato</a>
+            </div>
+             </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>Sobre Mim</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                    <img src="https://avatars.githubusercontent.com/u/166050362?v=4" alt="victor Fernandes" >  
+                    </div>
+                    <div class="about-text">
+                        <p>Olá Sou Colaborador desse Projeto</p>
+                        <p>Programador Front-End tenho uma boa experiência com HTML, CSS e JavaScript.</p>
+                        <p> Já desenvolvi alguns mini projetos acadêmicos e pessoais, e estou sempre buscando aprender mais.</p>
+                        <p>Atualmente estou cursando Tecnólogo em Jogos Digitais e sempre estou busa de novos desafios para conseguir aprimorar as minhas habilidades </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <h2>Minhas Habilidades</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3>Desenvolvimento Web</h3>
+                        <p>HTML5, CSS3, JavaScript , React, Node.js...</p>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <h3>Game Developer</h3>
+                        <p>desenvolvo mini projetos de Jogos 2D..</p>
+                    </div>
+                    
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio-section">
+            <div class="container">
+                <h2>Meus Projetos</h2>
+                <p class="portfolio-intro">Confira alguns dos projetos em que trabalhei ou que desenvolvi para estudo.</p>
+                <div class="portfolio-grid">
+                    <article class="portfolio-item">
+                        <img src="img/Input de Cartão de CRédito.png" alt="Nome do Projeto 1">
+                        <h3>Sistema para validar Cartões de Crédito</h3>
+                        <p>Um Sistema Simples e didático para conseguir verificar se o seu cartão é verificado ou não verificado.</p>
+                        <a href="link-para-o-projeto-ou-repo" target="_blank" class="cta-button tertiary">Ver Projeto</a>
+                    </article>
+                    <article class="portfolio-item">
+                        <img src="img/app-clima.jpeg" alt="Nome do Projeto 2">
+                        <h3>Aplicativo de Clima</h3>
+                        <p>Um aplicativo bem introsivo e simples de usar para conseguir verificar o clima.</p>
+                        <a href="link-para-o-projeto-ou-repo" target="_blank" class="cta-button tertiary">Ver Projeto</a>
+                    </article>
+                    </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Entre em Contato</h2>
+                <p>Gostaria de conversar, colaborar ou apenas trocar uma ideia? Me envie uma mensagem!</p>
+                <div class="contact-options">
+                    <div class="contact-option">
+                        <h3>Email</h3>
+                        <a href= "mailto:fernandesvictorg@gmail.com?"  target="_blank" _>Clique aqui</a>
+                    
+                 
+                    
+                    </div>
+                    <div class="contact-option">
+                        <h3>LinkedIn</h3>
+                        <a href="https://www.linkedin.com/in/victor-gabriel-ponce-fernandes-036798214/?trk=public-profile-join-page" target="_blank">Clique aqui</a>
+                            </a>
+                    </div>
+                    <div class="contact-option">
+                         <h3>GitHub</h3>
+                         <a href= https://github.com/Vicpon22 target="_blank">clique aqui</a>
+                    </div>
+                     </div>
+           
+           
+                    </div>
+                  
+                   
+                      <!--inciando html para o formulário-->>
+
+                    <div class="form-trigger">
+                        <button id="show-form-button" class="cta-button primary">Deixar uma Mensagem (Formulário)</button>
+                   </div>
+           
+                   <form id="contact-form" class="contact-form hidden-form" action="mailto:fernandesvictorg@gmail.com?" method="POST">
+                       <h3>Preencha seus dados para mais serviços :</h3>
+           
+                       <div class="form-group">
+                           <label for="name">Seu Nome:</label>
+                           <input type="text" id="name" name="name" required>
+                       </div>
+           
+                       <div class="form-group">
+                           <label for="email">Seu Email (para retorno):</label>
+                           <input type="email" id="email" name="email" required>
+                       </div>
+           
+                       <div class="form-group">
+                           <label for="phone">Seu Telefone (Opcional):</label>
+                           <input type="tel" id="phone" name="phone"> </div>
+           
+                       <div class="form-group">
+                            <label for="message">Sua Mensagem (Opcional):</label>
+                            <textarea id="message" name="message" rows="4"></textarea>
+                        </div>
+           
+                       <input type="hidden" name="_subject" value="Novo Contato Recebido do Site!">
+                       <input type="hidden" name="_captcha" value="false">
+           
+                       <button type="submit" class="cta-button primary">Enviar Dados</button>
+                   </form>
+                       <!--Finalizado  html para o formulário-->>
+        
+        
+        
+        
+    </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Victor Gabriel Ponce Fernandes. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="link-do-seu-linkedin" target="_blank" aria-label="LinkedIn"> L </a> <a href="link-do-seu-github" target="_blank" aria-label="GitHub"> G </a> </div>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
+
+
