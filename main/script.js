@@ -61,7 +61,15 @@ const collaboratorsInfo = [
     path: "../Rafael_Thomaz-001/rafael.html",
     picture:
       "https://avatars.githubusercontent.com/u/114960583?s=400&u=02a7cd678769fa7d4b078971439761aced4658d0&v=4",
-    devSpecialization: "Front-End",
+    devSpecialization: "frontend",
+  },
+  {
+    name: "Gabriel Henrique",
+    isMale: true,
+    hasBackButton: false,
+    path: "../gabriel-204/gabriel.html",
+    picture: "https://avatars.githubusercontent.com/u/173842653?v=4",
+    devSpecialization: "full stack",
   },
 ];
 
@@ -79,13 +87,16 @@ const makeAListOfColaborators = ({
           
             <div class='colaborador-info'>
               
-              <h3 class='colaborador-title'>${isMale ? "Colaborador" : "Colaboradora"
-    }</h3>
+              <h3 class='colaborador-title'>${
+                isMale ? "Colaborador" : "Colaboradora"
+              }</h3>
               <div class='colaborador-name'>${name}</div>
-              <div class='colaborador-area'><b>Área:</b> ${devSpecialization ? devSpecialization : "Não informada"
-    }</div>
-              <a href="${path}" class='colaborador-btn' target="${hasBackButton ? "_self" : "_blank"
-    }">Página pessoal</a>
+              <div class='colaborador-area'><b>Área:</b> ${
+                devSpecialization ? devSpecialization : "Não informada"
+              }</div>
+              <a href="${path}" class='colaborador-btn' target="${
+    hasBackButton ? "_self" : "_blank"
+  }">Página pessoal</a>
             </div>
           
         </li>
