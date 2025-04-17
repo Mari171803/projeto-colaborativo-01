@@ -71,6 +71,15 @@ const collaboratorsInfo = [
     picture: "https://avatars.githubusercontent.com/u/173842653?v=4",
     devSpecialization: "full stack",
   },
+  {
+    name: "Márcio Freitas",
+    isMale: true,
+    hasBackButton: true,
+    path: "../AlexFreitas-000/alexfreitas.html",
+    picture:
+      "https://media.licdn.com/dms/image/v2/D4D03AQF6TwWOIWANJw/profile-displayphoto-shrink_800_800/B4DZV4RmJjHYAc-/0/1741479634363?e=1750291200&v=beta&t=JvUdukmS6rV7n9zkzxo8leEa7y48N60Hpu9bi9FfyA0",
+    devSpecialization: "full stack",
+  },
 ];
 
 const makeAListOfColaborators = ({
