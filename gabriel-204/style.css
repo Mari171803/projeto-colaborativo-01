@@ -10,7 +10,7 @@ body {
     background-color: rgb(12, 51, 107);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    color: white;
+    color: hsl(0, 0%, 100%);
     display: flex;
     padding: 5rem;
     flex-direction: column;
@@ -60,5 +60,20 @@ body {
     & p {
         font-size: 20px;
         padding: 0 20rem;
+    }
+}
+
+.contatos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+
+    & .contatos-imagens {
+        margin-top: 32px;
+        display: flex;
+        flex-direction: row;
+        gap: 10rem;
     }
 }
