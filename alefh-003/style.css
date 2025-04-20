@@ -1,0 +1,98 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #cbc48b;
+
+    margin: 0;
+  }
+  
+  .card {
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    padding: 30px;
+    background-color: #fff;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: sans-serif;
+  }
+  
+  .card img {
+    display: block;
+  margin: 20px auto;
+  border-radius: 50%;
+  width: 200px;
+  }
+
+  .sobre-texto {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+
+  h1, h2 {
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  a {
+    display: inline-block;
+    margin: 5px 10px 0 0;
+    text-decoration: none;
+    color: #0366d6;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+  a .fa-github {
+    color: #000; 
+  }
+  
+  .icons {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+    font-size: 40px;
+  }
+
+  .icons i {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }  
+  
+  .button-voltar{
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .button-voltar a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000; 
+    color: #fff; 
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .button-voltar a:hover {
+    background-color: #333;
+    transform: scale(1.05);
+  }
