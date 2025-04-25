@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guilherme Orbolato | Dev Front-end</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="particles" id="particles-js"></div>
+    <div class="phone-container">
+        <!-- Celular com design de iPhone -->
+        <div class="phone">
+            <!-- Barra de status do iPhone -->
+            <div class="iphone-status-bar">
+                <div class="status-left">
+                    <span class="time">9:41</span>
+                </div>
+                <div class="status-right">
+                    <span class="cellular">📶</span>
+                    <span class="wifi">🛜</span>
+                    <span class="battery">🔋 100%</span>
+                </div>
+            </div>
+            
+            <!-- Notch do iPhone -->
+            <div class="iphone-notch">
+                <div class="speaker"></div>
+                <div class="camera"></div>
+                <div class="sensor"></div>
+            </div>
+            
+            <!-- Tela com conteúdo -->
+            <div class="phone-screen">
+                <div class="screen-reflection"></div>
+                
+                <!-- Seção 1: Perfil -->
+                <section class="screen-section" id="profile">
+                    <div class="profile">
+                        <img src="https://media.licdn.com/dms/image/v2/D4D03AQEwxMLUU3PkhA/profile-displayphoto-shrink_800_800/B4DZWG9GgXHAAg-/0/1741725919788?e=1750896000&v=beta&t=sPaDJ50rFvK9gMRD-R3lCCe9PHYCC4VSkAN_qC-1U0U" alt="Minha foto" class="profile-pic">
+                        <h1>Guilherme Orbolato</h1>
+                        <p class="subtitle">Desenvolvedor Front-end</p>
+                        <div class="about">
+                            <h2>👋 Um pouco sobre mim</h2>
+                            <p>
+                                Estou começando minha carreira como desenvolvedor front-end.
+                                Sou apaixonado por tecnologia e design. Adoro criar interfaces incríveis 
+                                e explorar novas ferramentas. Amo conversar, aprender e compartilhar conhecimento.
+                                Nos meus momentos livres, gosto de sair com amigos, jogar video game
+                                e tomar um café ☕. 
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Seção 2: Redes Sociais -->
+                <section class="screen-section" id="social">
+                    <div class="social-links">
+                        <h2>📱 Conecte-se Comigo</h2>
+                        <div class="links">
+                            <a href="https://linkedin.com/in/guilherme-orbolato" target="_blank" class="neon-button"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                            <a href="https://github.com/gOrbolato" target="_blank" class="neon-button"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="https://www.instagram.com/guilhermevulgoeu" target="_blank" class="neon-button"><i class="fab fa-instagram"></i> Instagram</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            
+            <!-- Indicador de Scroll -->
+            <div class="scroll-indicator">
+                <div class="dot active" data-section="profile"></div>
+                <div class="dot" data-section="social"></div>
+            </div>
+            
+            <!-- Botão de ação -->
+            <div class="iphone-home-button"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
